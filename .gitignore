@@ -1,0 +1,30 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace files
+go.work
+go.work.sum
+
+# env files
+.env
+.env.test
+.env.local
+
+# Editor / tooling
+.idea
+.vscode
+.qodo
+
+# Override user-global `.scripts/*` so the committed local-CI helper is versioned with this repo.
+!.scripts/
+!.scripts/*
