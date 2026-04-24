@@ -1,12 +1,12 @@
-package diabuddylogger
+package nexdozlogger
 
 import "context"
 
 type contextKey string
 
 const (
-	traceIDKey   contextKey = "diabuddy.trace_id"
-	requestIDKey contextKey = "diabuddy.request_id"
+	traceIDKey   contextKey = "nexdoz.trace_id"
+	requestIDKey contextKey = "nexdoz.request_id"
 )
 
 func WithTraceID(ctx context.Context, traceID string) context.Context {
