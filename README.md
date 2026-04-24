@@ -1,6 +1,6 @@
-# diabuddy-logger
+# nexdoz-logger
 
-Minimal, pluggable logger for DiaBuddy services.
+Minimal, pluggable logger for Nexdoz services.
 
 ## Sinks
 
@@ -18,13 +18,13 @@ Minimal, pluggable logger for DiaBuddy services.
 ## Usage
 
 ```go
-logger, err := diabuddylogger.NewFromEnv("diabuddy-user-api")
+logger, err := nexdozlogger.NewFromEnv("nexdoz-user-api")
 if err != nil {
   panic(err)
 }
 defer logger.Close()
 
-ctx := diabuddylogger.WithRequestID(context.Background(), "req-123")
+ctx := nexdozlogger.WithRequestID(context.Background(), "req-123")
 _ = logger.Info(ctx, "request completed", map[string]any{
   "path": "/healthz",
 })

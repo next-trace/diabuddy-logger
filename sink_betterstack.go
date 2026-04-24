@@ -1,4 +1,4 @@
-package diabuddylogger
+package nexdozlogger
 
 import (
 	"bytes"
